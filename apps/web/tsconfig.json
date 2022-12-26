@@ -4,6 +4,9 @@
   "exclude": ["node_modules"],
   "compilerOptions": {
     "baseUrl": "./",
-    "paths": { "@/*": ["./*"] }
+    "paths": {
+      "ui/*": ["../../packages/ui/*"],
+      "@/*": ["./*", "../../packages/ui/*"]
+    }
   }
 }
